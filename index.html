@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Demo: Cantina Negrar preloader deconstruction</title>
+	<meta name="description" content="Learn how to recreate the preloader from Cantina Negrar. Tutorial for a passionate front-end web developers by Petr Tichy.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/loader.css">
+	<link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/96e027db6d.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="demo">	
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+	<script src="js/main.js"></script>
+
+
+	<div id="demo-content">
+		<!-- le chargement -->
+		<div id="loader-wrapper">
+			<div id="loader"></div>
+			<div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+		</div>
+	</div>
+
+	<nav id="scroll-bar" class="scroll-bar">
+        <ul>
+            <li>
+                <a href="#accueil">
+                    <div class="icons-box" id="un">
+                        <i class="fa-solid fa-house"></i>
+                    </div>
+                    <div class="info" id="un-bis">Accueil</div>
+                </a>
+            </li>
+            <li>
+                <a href="#presentation">
+                    <div class="icons-box" id="deux">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="info" id="deux-bis">A propos</div>
+                </a>
+            </li>
+            <li>
+                <a href="#comp">
+                    <div class="icons-box" id="trois">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                    <div class="info" id="trois-bis">Compétences</div>
+                </a>
+            </li>
+            <li>
+                <a href="#projet">
+                    <div class="icons-box" id="quatre">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <div class="info" id="quatre-bis">Projets</div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+	<header id="accueil">
+        <div class="img-container"><img src="test.png" alt=""></div>
+        <div class="header-container">
+            <nav>
+                <ul>
+                    <a href="#accueil"><li>Accueil</li></a>
+                    <a href="#presentation"><li>A propos</li></a>
+                    <a href="#comp"><li>Compétences</li></a>
+                    <a href="#projet"><li>Projets</li></a>
+                </ul>
+            </nav>
+            <div class="box">
+                <h1><span id="dev">Développeur</span><span id="changing-word"></span></h1>
+                <p>- Hosseinee Nabil -</p>
+            </div>
+        </div>
+
+        <div class="hero">            
+            <a class="scroll-link" href="#presentation">
+                <svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYMid meet">
+                <g fill="none" fill-rule="evenodd">
+                    <rect class="rect" width="70" height="118" x="1.5" y="1.5" stroke="#FFF" stroke-width="3" rx="36"/>
+                    <circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="#FFF"/>
+                </g>
+            </svg>
+            </a>
+            
+        </div>
+    </header>
+
+
+	<!-- a propos -->
+    <section class="presentation" id="presentation">
+        <h2>A propos</h2>
+        <div class="pre-container">
+            <div class="content">
+                <p>Étudiant en <span>Métier du Multimédia et de l'Internet</span> depuis maintenant deux ans et <span>passionné d'informatique</span> depuis plusieurs années maintenant, je souhaite devenir un <span>développeur Fullstack.</span></p>
+                <p>Je suis <span>curieux</span> et <span>touche à tout</span>, j'adore <span>découvrir</span> de nouvelles choses, de <span>nouvelles technologies</span> et admirer mon code prendre vie sur un site.</p>
+                <p>Je suis actuellement à la recherche d'un stage, dans le but d'appliquer ce que j'ai appris et de découvrir cet univers qui m'intéresse.</p>
+            </div>
+            <div class="avatar">
+                <div class="circle" id="perso">
+                    <img src="face_co.svg" alt="monAvatar">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <div class="custom-shape-divider-one">
+        <svg id="avatar" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+
+    <!-- compétence -->
+    <section class="comp" id="comp">
+        <h2>Compétences</h2>
+        <div class="comp-container">
+            <div class="comp-box compb1">
+                <div class="comp-title"><h3>Développement web</h3><a href="#projet"><button>Voir les projets</button></a></div>
+                <div class="tools-container">
+                    <div class="tools-box">
+                        <div class="tools-content">
+                            <div class="tools"><i class="fa-brands fa-html5"></i></div>
+                            <h4 class="tools-title">HTML5</h4>
+                        </div>
+                        <div class="tools-content">
+                            <div class="tools"><i class="fa-brands fa-css3-alt"></i></div>
+                            <h4 class="tools-title">CSS3</h4>
+
+                        </div>
+                        <div class="tools-content">
+                            <div class="tools"><i class="fa-brands fa-js"></i></div>
+                            <h4 class="tools-title">JavaScript</h4>
+
+                        </div>
+                    </div>
+
+                    <div class="tools-box">
+                        <div class="tools-content">
+                            <div class="tools"><i class="fa-brands fa-bootstrap"></i></div>
+                            <h4 class="tools-title">Bootstrap</h4>
+
+                        </div>
+                        <div class="tools-content">
+                            <div class="tools"><i class="fa-brands fa-php"></i></div>
+                            <h4 class="tools-title">PHP</h4>
+
+                        </div>
+                        <div class="tools-content">
+                            <div class="tools"><i class="fa-solid fa-database"></i></div>
+                            <h4 class="tools-title">SQL</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comp-box compb2">
+                <div class="comp-title"><h3>Design multimédia</h3><a href="#projet"><button>Voir les projets</button></a></div>
+                <div class="tools-container">
+                    <div class="tools-box">
+                        <div class="tools-content">
+                            <div class="tools"><i class="fa-solid fa-video"></i></i></div>
+                            <h4 class="tools-title">Vidéo</h4>
+                        </div>
+                        <div class="tools-content">
+                            <div class="tools"><i class="fa-solid fa-camera"></i></div>
+                            <h4 class="tools-title">Photographie</h4>
+
+                        </div>
+                        <div class="tools-content">
+                            <div class="tools"><i class="fa-solid fa-paintbrush"></i></div>
+                            <h4 class="tools-title">Dessin</h4>
+
+                        </div>
+                    </div>
+
+                    <div class="tools-box">
+                        <div class="tools-content">
+                            <div class="tools"><img src="premiere.png" alt="Première pro logo"></div>
+                            <h4 class="tools-title">Première Pro</h4>
+
+                        </div>
+                        <div class="tools-content">
+                            <div class="tools"><img src="photoshop.png" alt="Photoshop Logo"></div>
+                            <h4 class="tools-title">Photoshop</h4>
+
+                        </div>
+                        <div class="tools-content">
+                            <div class="tools"><img src="illustrator.png" alt="Illustrator Logo"></div>
+                            <h4 class="tools-title">Illustrator</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="custom-shape-divider-two">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+
+    <!-- section projet -->
+
+    <section class="projet" id="projet">
+        <h2>Projets</h2>
+        <div class="proj-container">
+            <div class="projet-box">
+
+                <div class="box-proj">
+                    <div class="img-proj">
+                        <img src="dashboard_red.png" alt="">
+                        <div class="overlay">
+                            <a onclick="getIdOnClick()" id="slider1" class="overlay-link">En savoir plus</a>
+                        </div>
+                    </div>
+                    <h3>Dashboard</h3>
+                    <div id="link-slider1" class="slider">
+                        <button class="close" onclick="hideSlider(this)">Fermer</button>
+                        <button class="prev" onclick="prevSlide()">&#10094;</button>
+                        <img src="d_base.png" alt="Image 1">
+                        <img src="d_annee.png" alt="Image 2">
+                        <img src="d_periode.png" alt="Image 3">
+                        <button class="next" onclick="nextSlide()">&#10095;</button>
+                    </div>
+                </div>
+
+                <div class="box-proj">
+                    <div class="img-proj">
+                        <img src="ticket_red.png" alt="">
+                        <div class="overlay">
+                            <a onclick="getIdOnClick()" id="slider2" class="overlay-link">En savoir plus</a>
+                        </div>
+                    </div>
+                    <h3>Bug Tracker</h3>
+                    <div id="link-slider2" class="slider">
+                        <button class="close" onclick="hideSlider(this)">Fermer</button>
+                        <button class="prev" onclick="prevSlide()">&#10094;</button>
+                        <img src="t_login.png" alt="Image 1">
+                        <img src="t_admin.png" alt="Image 2">
+                        <img src="t_form.png" alt="Image 3">
+                        <img src="t_bug_tab.png" alt="Image 3">
+                        <img src="t_user_tab.png" alt="Image 3">
+                        <button class="next" onclick="nextSlide()">&#10095;</button>
+                    </div>
+                </div>
+
+                <div class="box-proj">
+                    <div class="img-proj">
+                        <img src="frontend_red.png" alt="">
+                        <div class="overlay">
+                            <a onclick="getIdOnClick()" id="slider3" class="overlay-link">En savoir plus</a>
+                        </div>
+                    </div>
+                    <h3>Frontend Mentor</h3>
+                    <div id="link-slider3" class="slider">
+                        <button class="close" onclick="hideSlider(this)">Fermer</button>
+                        <button class="prev" onclick="prevSlide()">&#10094;</button>
+                        <img src="f_cars.png" alt="Image 1">
+                        <img src="f_coms.png" alt="Image 2">
+                        <img src="f_parfums.png" alt="Image 3">
+                        <img src="f_laptop.png" alt="Image 3">
+                        <img src="f_laptop2.png" alt="Image 3">
+                        <img src="f_laptop3.png" alt="Image 3">
+                        <img src="f_laptop4.png" alt="Image 3">
+                        <button class="next" onclick="nextSlide()">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projet-box">
+                <div class="box-proj">
+                    <div class="img-proj">
+                        <a href="https://hossemoh.tpweb.univ-rouen.fr/dashboard/index.php" target="_blank">
+                            <img src="crescendo_red.png" alt="">
+                            <div class="overlay">
+                                <a href="https://youtu.be/WN7hKiMa0UE" target="_blank" class="overlay-link">En savoir plus</a>
+                            </div>
+                        </a>
+                    </div>
+                    <h3>Vidéo Crescendo</h3>
+                </div>
+                <div class="box-proj">
+                    <div class="img-proj">
+                            <img src="portfolio_red.png" alt="">
+                            <div class="overlay">
+                                <a onclick="getIdOnClick()" id="slider5" class="overlay-link">En savoir plus</a>
+                            </div>
+                    </div>
+                    <h3>Portfolio</h3>
+                    <div id="link-slider5" class="slider">
+                        <button class="close" onclick="hideSlider(this)">Fermer</button>
+                        <button class="prev" onclick="prevSlide()">&#10094;</button>
+                        <img src="p_home.png" alt="Image 1">
+                        <img src="p_about.png" alt="Image 2">
+                        <img src="p_comp.png" alt="Image 3">
+                        <img src="p_proj.png" alt="Image 3">
+                        <button class="next" onclick="nextSlide()">&#10095;</button>
+                    </div>
+                </div>
+                <div class="box-proj">
+                    <div class="img-proj">
+                        <img src="marlow_red.png" alt="">
+                        <div class="overlay">
+                            <a href="https://youtu.be/y1i1NComhVs" target="_blank" class="overlay-link">En savoir plus</a>
+                        </div>
+                    </div>
+                    <h3>Vidéo Inspecteur Marlow</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="logo">
+            <img src="logo_v2.png" alt="Mon logo">
+        </div>
+
+        <div class="cv">
+            <a href="./cv/CV_2024.pdf" target="_blank"><button class="btn-download"><p>Télécharger mon CV</p> <div class="separator"> </div><i class="fa-solid fa-down-long"></i></button></a>
+        </div>
+
+        <div class="socials">
+            <div class="socials_box">
+                <a href="https://www.linkedin.com/in/nabil-hosseinee-0b20a3272/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+
+            <div class="socials_box">
+                <a href="https://www.instagram.com/nab_hosne/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+
+            <div class="socials_box">
+                <a href="https://github.com/Nabil-Hosseinee" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
